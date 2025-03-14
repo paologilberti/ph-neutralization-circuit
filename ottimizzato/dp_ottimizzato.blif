@@ -1,0 +1,245 @@
+.model dp_ottimizzato
+.inputs INIZIO PH7 PH6 PH5 PH4 PH3 PH2 PH1 PH0 TIPO1 TIPO0 RESET
+.outputs PHF7 PHF6 PHF5 PHF4 PHF3 PHF2 PHF1 PHF0 NC7 NC6 NC5 NC4 NC3 NC2 NC1 \
+NC0 QFF
+.latch    QF QFF re NIL 0
+.latch    HF7 PHF7 re NIL 0
+.latch    HF6 PHF6 re NIL 0
+.latch    HF5 PHF5 re NIL 0
+.latch    HF4 PHF4 re NIL 0
+.latch    HF3 PHF3 re NIL 0
+.latch    HF2 PHF2 re NIL 0
+.latch    HF1 PHF1 re NIL 0
+.latch    HF0 PHF0 re NIL 0
+.latch    N7 Z7 re NIL 0
+.latch    N6 Z6 re NIL 0
+.latch    N5 Z5 re NIL 0
+.latch    N4 Z4 re NIL 0
+.latch    N3 Z3 re NIL 0
+.latch    N2 Z2 re NIL 0
+.latch    N1 Z1 re NIL 0
+.latch    N0 Z0 re NIL 0
+.latch    H7 HH7 re NIL 0
+.latch    H6 HH6 re NIL 0
+.latch    H5 HH5 re NIL 0
+.latch    H4 HH4 re NIL 0
+.latch    H3 HH3 re NIL 0
+.latch    H2 HH2 re NIL 0
+.latch    H1 HH1 re NIL 0
+.latch    H0 HH0 re NIL 0
+.latch    NCI7 NCK7 re NIL 0
+.latch    NCI6 NCK6 re NIL 0
+.latch    NCI5 NCK5 re NIL 0
+.latch    NCI4 NCK4 re NIL 0
+.latch    NCI3 NCK3 re NIL 0
+.latch    NCI2 NCK2 re NIL 0
+.latch    NCI1 NCK1 re NIL 0
+.latch    NCI0 NCK0 re NIL 0
+.names RESET NCK7 NC7
+01 1
+.names RESET NCK6 NC6
+01 1
+.names RESET NCK5 NC5
+01 1
+.names RESET NCK4 NC4
+01 1
+.names RESET NCK3 NC3
+01 1
+.names RESET NCK2 NC2
+01 1
+.names RESET NCK1 NC1
+01 1
+.names RESET NCK0 NC0
+01 1
+.names TIPO1 TIPO0 [468] Y2
+011 1
+.names TIPO1 TIPO0 RESET P7 P5 P4 [254] [358] [392] [407] [477] QF
+--1-------- 1
+------0---- 1
+-------1--- 1
+0--1------- 1
+-0------1-0 1
+0---11---1- 1
+.names [254] [385] [407] [431] [453] [480] P7
+1---0- 1
+---1-0 1
+-010-- 1
+--011- 1
+.names [382] [407] [477] [480] P6
+11-- 1
+--01 1
+-1-0 1
+.names [382] [385] [386] [387] [453] [476] [480] P5
+0---0-- 1
+--1---0 1
+-111--- 1
+--01-0- 1
+.names [387] [453] [476] P4
+00- 1
+0-0 1
+111 1
+.names P7 [361] HF7
+11 1
+.names P6 [361] HF6
+11 1
+.names P5 [361] HF5
+11 1
+.names P4 [361] HF4
+11 1
+.names [361] [482] HF3
+11 1
+.names Y2 [361] [474] HF2
+011 1
+.names [361] [470] HF1
+11 1
+.names [361] [471] HF0
+11 1
+.names QF P7 N7
+01 1
+.names QF P6 N6
+01 1
+.names QF P5 N5
+01 1
+.names QF P4 N4
+01 1
+.names QF [482] N3
+01 1
+.names Y2 QF [474] N2
+001 1
+.names QF [470] N1
+01 1
+.names QF [471] N0
+01 1
+.names UU7 [478] H7
+11 1
+.names UU6 [478] H6
+11 1
+.names [473] [478] H5
+11 1
+.names [119] [472] [478] H4
+011 1
+.names UU3 [478] H3
+11 1
+.names UU2 [478] H2
+11 1
+.names INIZIO QF H0 HH1 H1
+0-11 1
+-000 1
+.names INIZIO QF HH0 H0
+1-- 1
+-00 1
+.names HH7 HH6 UU6 [358] UU7
+1-1- 1
+10-0 1
+0100 1
+.names HH6 [358] [481] UU6
+101 1
+000 1
+.names HH3 HH2 UU2 [358] UU3
+1-1- 1
+10-0 1
+0100 1
+.names HH2 [358] [479] UU2
+101 1
+000 1
+.names UU7 [361] NCI7
+11 1
+.names UU6 [361] NCI6
+11 1
+.names [473] [483] NCI5
+11 1
+.names [119] [472] [483] NCI4
+011 1
+.names UU3 [361] NCI3
+11 1
+.names UU2 [361] NCI2
+11 1
+.names HH1 NCI0 [483] NCI1
+11- 1
+001 1
+.names HH0 [483] NCI0
+01 1
+.names HH4 HH3 HH2 [479] [119]
+1110 1
+.names [431] [469] [477] [254]
+-1- 1
+1-1 1
+0-0 1
+.names TIPO1 TIPO0 [358]
+11 1
+00 1
+.names RESET QF [361]
+01 1
+.names [386] [387] [392] [468] [469] [470] [471] [382]
+1---0-- 1
+-1--0-- 1
+--110-- 1
+--1-01- 1
+--1-0-1 1
+.names [386] [387] [476] [385]
+0-- 1
+-0- 1
+--1 1
+.names INIZIO PH5 Z5 [386]
+11- 1
+0-1 1
+.names INIZIO PH4 Z4 [387]
+11- 1
+0-1 1
+.names INIZIO PH3 Z3 [392]
+11- 1
+0-1 1
+.names INIZIO PH6 Z6 [407]
+11- 1
+0-1 1
+.names INIZIO PH7 Z7 [431]
+11- 1
+0-1 1
+.names [392] [469] [453]
+1- 1
+-1 1
+.names INIZIO PH2 Z2 [468]
+11- 1
+0-1 1
+.names TIPO1 TIPO0 [469]
+0- 1
+-1 1
+.names INIZIO PH1 Z1 [470]
+11- 1
+0-1 1
+.names INIZIO PH0 Z0 [471]
+11- 1
+0-1 1
+.names HH4 HH3 UU3 [472]
+1-- 1
+-10 1
+.names HH5 [119] [473]
+01 1
+10 1
+.names TIPO1 TIPO0 [468] [474]
+--1 1
+01- 1
+.names Y2 [392] [476]
+0- 1
+-0 1
+.names [382] [407] [477]
+1- 1
+-1 1
+.names INIZIO QF [478]
+00 1
+.names HH1 HH0 [479]
+0- 1
+-0 1
+.names [385] [453] [480]
+0- 1
+-0 1
+.names HH5 [119] [481]
+0- 1
+-0 1
+.names Y2 [392] [453] [469] [482]
+--0- 1
+10-- 1
+01-1 1
+.names [358] [361] [483]
+01 1
+.end

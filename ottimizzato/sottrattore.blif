@@ -1,0 +1,54 @@
+.model sottrattore
+
+.inputs A7 A6 A5 A4 A3 A2 A1 A0 B7 B6 B5 B4 B3 B2 B1 B0 CIN
+.outputs O7 O6 O5 O4 O3 O2 O1 O0 COUT COUTS
+
+.names B7 Z7
+0 1
+.names B6 Z6
+0 1
+.names B5 Z5
+0 1
+.names B4 Z4
+0 1
+.names B3 Z3
+0 1
+.names B2 Z2
+0 1
+.names B1 Z1
+0 1
+.names B0 Z0
+0 1
+
+.subckt UNO O7=cost7 O6=cost6 O5=cost5 O4=cost4 O3=cost3 O2=cost2 O1=cost1 O0=cost0
+
+.subckt sommatore A=A0 B=Z0 CIN=CIN O=Y0 COUT=C0
+.subckt sommatore A=A1 B=Z1 CIN=C0 O=Y1 COUT=C1
+.subckt sommatore A=A2 B=Z2 CIN=C1 O=Y2 COUT=C2
+.subckt sommatore A=A3 B=Z3 CIN=C2 O=Y3 COUT=C3
+.subckt sommatore A=A4 B=Z4 CIN=C3 O=Y4 COUT=C4
+.subckt sommatore A=A5 B=Z5 CIN=C4 O=Y5 COUT=C5
+.subckt sommatore A=A6 B=Z6 CIN=C5 O=Y6 COUT=C6
+.subckt sommatore A=A7 B=Z7 CIN=C6 O=Y7 COUT=COUT
+
+.subckt sommatore8 A7=Y7 A6=Y6 A5=Y5 A4=Y4 A3=Y3 A2=Y2 A1=Y1 A0=Y0 B7=cost7 B6=cost6 B5=cost5 B4=cost4 B3=cost3 B2=cost2 B1=cost1 B0=cost0 CIN=CIN O7=O7 O6=O6 O5=O5 O4=O4 O3=O3 O2=O2 O1=O1 O0=O0 COUT=COUTS
+
+.search sommatore.blif
+.search sommatore8.blif
+
+.end
+
+.model UNO
+
+.outputs O7 O6 O5 O4 O3 O2 O1 O0
+.names O7
+.names O6
+.names O5
+.names O4
+.names O3
+.names O2
+.names O1
+.names O0
+1
+
+.end

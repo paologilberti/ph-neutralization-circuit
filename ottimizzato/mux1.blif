@@ -1,0 +1,10 @@
+.model mux1
+
+.inputs S A B
+.outputs O
+
+.names S A B O
+11- 1
+0-1 1
+
+.end

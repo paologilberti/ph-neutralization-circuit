@@ -1,0 +1,17 @@
+.model registro8
+
+.inputs A7 A6 A5 A4 A3 A2 A1 A0
+.outputs O7 O6 O5 O4 O3 O2 O1 O0
+
+.subckt registro1 A=A7 O=O7
+.subckt registro1 A=A6 O=O6
+.subckt registro1 A=A5 O=O5
+.subckt registro1 A=A4 O=O4
+.subckt registro1 A=A3 O=O3
+.subckt registro1 A=A2 O=O2
+.subckt registro1 A=A1 O=O1
+.subckt registro1 A=A0 O=O0
+
+.search registro1.blif
+
+.end

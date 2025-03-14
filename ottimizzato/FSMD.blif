@@ -1,0 +1,295 @@
+.model FSMD
+.inputs RST START PH7 PH6 PH5 PH4 PH3 PH2 PH1 PH0
+.outputs FINE_OPERAZIONE ERRORE_SENSORE VALVOLA_ACIDO VALVOLA_BASICO \
+PH_FINALE7 PH_FINALE6 PH_FINALE5 PH_FINALE4 PH_FINALE3 PH_FINALE2 PH_FINALE1 \
+PH_FINALE0 NCLK7 NCLK6 NCLK5 NCLK4 NCLK3 NCLK2 NCLK1 NCLK0
+.latch    [25] LatchOut_v11   1
+.latch    [26] LatchOut_v12   1
+.latch    [27] LatchOut_v13   0
+.latch    QF XX re NIL 0
+.latch    HF7 PH_FINALE7 re NIL 0
+.latch    HF6 PH_FINALE6 re NIL 0
+.latch    HF5 PH_FINALE5 re NIL 0
+.latch    HF4 PH_FINALE4 re NIL 0
+.latch    HF3 PH_FINALE3 re NIL 0
+.latch    HF2 PH_FINALE2 re NIL 0
+.latch    HF1 PH_FINALE1 re NIL 0
+.latch    HF0 PH_FINALE0 re NIL 0
+.latch    N7 Z7 re NIL 0
+.latch    N6 Z6 re NIL 0
+.latch    N5 Z5 re NIL 0
+.latch    N4 Z4 re NIL 0
+.latch    N3 Z3 re NIL 0
+.latch    N2 Z2 re NIL 0
+.latch    N1 Z1 re NIL 0
+.latch    N0 Z0 re NIL 0
+.latch    H7 HH7 re NIL 0
+.latch    H6 HH6 re NIL 0
+.latch    H5 HH5 re NIL 0
+.latch    H4 HH4 re NIL 0
+.latch    H3 HH3 re NIL 0
+.latch    H2 HH2 re NIL 0
+.latch    H1 HH1 re NIL 0
+.latch    H0 HH0 re NIL 0
+.latch    NCI7 NCK7 re NIL 0
+.latch    NCI6 NCK6 re NIL 0
+.latch    NCI5 NCK5 re NIL 0
+.latch    NCI4 NCK4 re NIL 0
+.latch    NCI3 NCK3 re NIL 0
+.latch    NCI2 NCK2 re NIL 0
+.latch    NCI1 NCK1 re NIL 0
+.latch    NCI0 NCK0 re NIL 0
+.names XX [337] FINE_OPERAZIONE
+11 1
+.names RST XX LatchOut_v11 LatchOut_v12 LatchOut_v13 ERRORE_SENSORE
+01100 1
+.names PH7 PH6 PH5 Y T0 LatchOut_v11 LatchOut_v12 [27] [318] [336] \
+VALVOLA_ACIDO
+-----101-- 1
+--1-0---1- 1
+----0---11 1
+11-1---1-- 1
+.names PH7 PH4 XX Y LatchOut_v12 [328] [337] VALVOLA_BASICO
+0----1- 1
+00-1--- 1
+--0-1-1 1
+.names RST NCK7 NCLK7
+01 1
+.names RST NCK6 NCLK6
+01 1
+.names RST NCK5 NCLK5
+01 1
+.names RST NCK4 NCLK4
+01 1
+.names RST NCK3 NCLK3
+01 1
+.names RST NCK2 NCLK2
+01 1
+.names RST NCK1 NCLK1
+01 1
+.names RST NCK0 NCLK0
+01 1
+.names RST START LatchOut_v13 LatchOut_v12 Y
+0101 1
+.names VALVOLA_ACIDO T0 [27] T1
+1-- 1
+-10 1
+.names VALVOLA_BASICO XX Y LatchOut_v11 [26] [27] T0
+1----- 1
+--1--0 1
+-0-100 1
+.names T1 [26] [25]
+1- 1
+-1 1
+.names RST VALVOLA_BASICO Y LatchOut_v13 LatchOut_v12 [26]
+1---- 1
+-1--- 1
+--001 1
+.names PH7 XX Y [328] [336] [337] [27]
+---1-- 1
+0-1--- 1
+--1-0- 1
+-0---1 1
+.names T1 T0 P7 P5 P4 [254] [358] [392] [407] [322] QF
+-----0---- 1
+------1--- 1
+0-1------- 1
+-0-----1-0 1
+0--11---1- 1
+.names [254] [407] [431] [453] [314] [316] [327] P7
+1--0--- 1
+--1---0 1
+-011--- 1
+-10-00- 1
+.names [453] [382] [386] [387] [314] [316] P5
+00---- 1
+----01 1
+1-10-- 1
+--01-0 1
+.names [453] [387] [316] P4
+00- 1
+-00 1
+111 1
+.names [431] [311] [322] [254]
+-1- 1
+1-1 1
+0-0 1
+.names T1 T0 [358]
+11 1
+00 1
+.names Y PH3 Z3 [392]
+11- 1
+0-1 1
+.names Y PH6 Z6 [407]
+11- 1
+0-1 1
+.names P7 [361] HF7
+11 1
+.names RST QF [361]
+01 1
+.names [361] [236] HF6
+11 1
+.names P5 [361] HF5
+11 1
+.names P4 [361] HF4
+11 1
+.names [361] [329] HF3
+11 1
+.names [361] Y2 [319] HF2
+101 1
+.names T1 T0 [310] Y2
+011 1
+.names [361] [312] HF1
+11 1
+.names [361] [313] HF0
+11 1
+.names QF P7 N7
+01 1
+.names QF [236] N6
+01 1
+.names QF P5 N5
+01 1
+.names QF P4 N4
+01 1
+.names QF [329] N3
+01 1
+.names QF Y2 [319] N2
+001 1
+.names QF [312] N1
+01 1
+.names QF [313] N0
+01 1
+.names UU7 [323] H7
+11 1
+.names HH7 HH6 UU6 [358] UU7
+1-1- 1
+10-0 1
+0100 1
+.names UU6 [323] H6
+11 1
+.names [358] HH6 [326] UU6
+011 1
+000 1
+.names [317] [323] H5
+11 1
+.names [158] [315] [323] H4
+011 1
+.names HH4 HH3 HH2 [325] [158]
+1110 1
+.names UU3 [323] H3
+11 1
+.names HH3 HH2 UU2 [358] UU3
+1-1- 1
+10-0 1
+0100 1
+.names UU2 [323] H2
+11 1
+.names [358] HH2 [325] UU2
+011 1
+000 1
+.names Y QF H0 HH1 H1
+0-11 1
+-000 1
+.names Y QF HH0 H0
+1-- 1
+-00 1
+.names UU7 [361] NCI7
+11 1
+.names UU6 [361] NCI6
+11 1
+.names [317] [330] NCI5
+11 1
+.names [158] [315] [330] NCI4
+011 1
+.names UU3 [361] NCI3
+11 1
+.names UU2 [361] NCI2
+11 1
+.names HH1 NCI0 [330] NCI1
+11- 1
+001 1
+.names HH0 [330] NCI0
+01 1
+.names Y PH7 Z7 [431]
+11- 1
+0-1 1
+.names [392] [311] [453]
+1- 1
+-1 1
+.names [392] [386] [387] [310] [311] [312] [313] [382]
+-1--0-- 1
+--1-0-- 1
+1--10-- 1
+1---01- 1
+1---0-1 1
+.names Y PH5 Z5 [386]
+11- 1
+0-1 1
+.names Y PH4 Z4 [387]
+11- 1
+0-1 1
+.names [407] [382] [322] [327] [236]
+11-- 1
+--01 1
+1--0 1
+.names PH2 Y Z2 [310]
+11- 1
+-01 1
+.names T1 T0 [311]
+0- 1
+-1 1
+.names PH1 Y Z1 [312]
+11- 1
+-01 1
+.names PH0 Y Z0 [313]
+11- 1
+-01 1
+.names [386] [387] [314]
+0- 1
+-0 1
+.names HH4 UU3 HH3 [315]
+1-- 1
+-01 1
+.names [392] Y2 [316]
+0- 1
+-0 1
+.names HH5 [158] [317]
+01 1
+10 1
+.names PH6 Y [318]
+01 1
+.names T1 T0 [310] [319]
+--1 1
+01- 1
+.names [407] [382] [322]
+1- 1
+-1 1
+.names Y QF [323]
+00 1
+.names HH1 HH0 [325]
+0- 1
+-0 1
+.names HH5 [158] [326]
+0- 1
+-0 1
+.names P4 [453] [314] [327]
+-0- 1
+0-0 1
+.names PH5 Y [318] [328]
+--1 1
+01- 1
+.names [392] Y2 [453] [311] [329]
+--0- 1
+01-- 1
+10-1 1
+.names [358] [361] [330]
+01 1
+.names PH4 PH3 PH2 PH1 PH0 [336]
+1---- 1
+-1--- 1
+--1-- 1
+---1- 1
+----1 1
+.names RST LatchOut_v13 [337]
+01 1
+.end

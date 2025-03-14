@@ -1,0 +1,71 @@
+.model demux4
+
+.inputs S1 S0 X7 X6 X5 X4 X3 X2 X1 X0
+.outputs A7 A6 A5 A4 A3 A2 A1 A0 B7 B6 B5 B4 B3 B2 B1 B0 C7 C6 C5 C4 C3 C2 C1 C0 D7 D6 D5 D4 D3 D2 D1 D0
+
+.names S1 S0 X7 A7
+001 1
+.names S1 S0 X6 A6
+001 1
+.names S1 S0 X5 A5
+001 1
+.names S1 S0 X4 A4
+001 1
+.names S1 S0 X3 A3
+001 1
+.names S1 S0 X2 A2
+001 1
+.names S1 S0 X1 A1
+001 1
+.names S1 S0 X0 A0
+001 1
+.names S1 S0 X7 B7
+011 1
+.names S1 S0 X6 B6
+011 1
+.names S1 S0 X5 B5
+011 1
+.names S1 S0 X4 B4
+011 1
+.names S1 S0 X3 B3
+011 1
+.names S1 S0 X2 B2
+011 1
+.names S1 S0 X1 B1
+011 1
+.names S1 S0 X0 B0
+011 1
+.names S1 S0 X7 C7
+101 1
+.names S1 S0 X6 C6
+101 1
+.names S1 S0 X5 C5
+101 1
+.names S1 S0 X4 C4
+101 1
+.names S1 S0 X3 C3
+101 1
+.names S1 S0 X2 C2
+101 1
+.names S1 S0 X1 C1
+101 1
+.names S1 S0 X0 C0
+101 1
+.names S1 S0 X7 D7
+111 1
+.names S1 S0 X6 D6
+111 1
+.names S1 S0 X5 D5
+111 1
+.names S1 S0 X4 D4
+111 1
+.names S1 S0 X3 D3
+111 1
+.names S1 S0 X2 D2
+111 1
+.names S1 S0 X1 D1
+111 1
+.names S1 S0 X0 D0
+111 1
+
+.end
